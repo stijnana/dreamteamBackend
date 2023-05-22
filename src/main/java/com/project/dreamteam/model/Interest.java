@@ -4,14 +4,15 @@ import lombok.Getter;
 import lombok.Setter;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
+
 @Document
 @Getter
 @Setter
 @AllArgsConstructor
-public class User {
+public class Interest {
     @Id
     private long id;
-    private String firstName;
-    private String lastName;
+    private String interest;
+    private String category;
     private String corpId;
 }
